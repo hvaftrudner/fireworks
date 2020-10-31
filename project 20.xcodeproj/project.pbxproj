@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		E0CBB3B9254B55F400DBCE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBB3B8254B55F400DBCE04 /* AppDelegate.swift */; };
 		E0CBB3BB254B55F400DBCE04 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0CBB3BA254B55F400DBCE04 /* GameScene.sks */; };
-		E0CBB3BD254B55F400DBCE04 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0CBB3BC254B55F400DBCE04 /* Actions.sks */; };
 		E0CBB3BF254B55F400DBCE04 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBB3BE254B55F400DBCE04 /* GameScene.swift */; };
 		E0CBB3C1254B55F400DBCE04 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBB3C0254B55F400DBCE04 /* GameViewController.swift */; };
 		E0CBB3C4254B55F400DBCE04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CBB3C2254B55F400DBCE04 /* Main.storyboard */; };
 		E0CBB3C6254B55F400DBCE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CBB3C5254B55F400DBCE04 /* Assets.xcassets */; };
+		E0CBB3D1254B563300DBCE04 /* fuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0CBB3CF254B563300DBCE04 /* fuse.sks */; };
+		E0CBB3D2254B563300DBCE04 /* explode.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0CBB3D0254B563300DBCE04 /* explode.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0CBB3B5254B55F400DBCE04 /* project 20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project 20.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CBB3B8254B55F400DBCE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0CBB3BA254B55F400DBCE04 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		E0CBB3BC254B55F400DBCE04 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		E0CBB3BE254B55F400DBCE04 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E0CBB3C0254B55F400DBCE04 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E0CBB3C3254B55F400DBCE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0CBB3C5254B55F400DBCE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0CBB3C7254B55F400DBCE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0CBB3CF254B563300DBCE04 /* fuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fuse.sks; sourceTree = "<group>"; };
+		E0CBB3D0254B563300DBCE04 /* explode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explode.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				E0CBB3B8254B55F400DBCE04 /* AppDelegate.swift */,
 				E0CBB3BA254B55F400DBCE04 /* GameScene.sks */,
-				E0CBB3BC254B55F400DBCE04 /* Actions.sks */,
 				E0CBB3BE254B55F400DBCE04 /* GameScene.swift */,
 				E0CBB3C0254B55F400DBCE04 /* GameViewController.swift */,
 				E0CBB3C2254B55F400DBCE04 /* Main.storyboard */,
 				E0CBB3C5254B55F400DBCE04 /* Assets.xcassets */,
 				E0CBB3C7254B55F400DBCE04 /* Info.plist */,
+				E0CBB3D0254B563300DBCE04 /* explode.sks */,
+				E0CBB3CF254B563300DBCE04 /* fuse.sks */,
 			);
 			path = "project 20";
 			sourceTree = "<group>";
@@ -129,8 +132,9 @@
 			files = (
 				E0CBB3C4254B55F400DBCE04 /* Main.storyboard in Resources */,
 				E0CBB3BB254B55F400DBCE04 /* GameScene.sks in Resources */,
+				E0CBB3D1254B563300DBCE04 /* fuse.sks in Resources */,
 				E0CBB3C6254B55F400DBCE04 /* Assets.xcassets in Resources */,
-				E0CBB3BD254B55F400DBCE04 /* Actions.sks in Resources */,
+				E0CBB3D2254B563300DBCE04 /* explode.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.project-20";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -309,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.project-20";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
